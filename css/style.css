@@ -1,1 +1,43 @@
-.navigation-bar{display:flex}.navigation-bar li{padding:5px 10px}.selector-a{float:left}.selector-a,.selector-b{background:orange}.selector-e{padding:10px;box-shadow:1px 1px 1px 1px rgba(0,0,0,0.3)}.selector-f,.selector-g{padding:20px;box-shadow:1px 1px 1px 1px rgba(0,0,0,0.3)}.selector-g{padding:8px;box-shadow:1px 1px 1px 1px rgba(0,0,0,0.3)}.selector-f,.selector-g{background-color:blue;padding:10px}.selector-g{padding:15px}*,*:before,*:after{background-image:-webkit-linear-gradient(red, blue)}selector-h{background-image:linear-gradient(red, blue)}
+@charset "UTF-8";
+/* este comentário será exportado para o arquivo css */
+.navigation-bar {
+  display: flex; }
+  .navigation-bar li {
+    padding: 5px 10px; }
+
+.selector-a {
+  float: left; }
+
+.selector-a, .selector-b {
+  background: orange; }
+
+.selector-e {
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.selector-f, .selector-g {
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.selector-g {
+  padding: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.selector-f, .selector-g {
+  background-color: blue;
+  padding: 10px; }
+
+.selector-g {
+  padding: 15px; }
+
+*, *:before, *:after {
+  background-image: -webkit-linear-gradient(red, blue); }
+
+selector-h {
+  background-image: linear-gradient(red, blue); }
+
+header {
+  width: 50px; }
+  @media (min-width: 40em) {
+    header {
+      background-color: blue; } }
