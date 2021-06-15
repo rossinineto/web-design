@@ -1,8 +1,64 @@
-.header {
-    width: 50%;
-    margin: 0 auto;
-  
-    &-link {
-      color: blue;
-    }
+// modo de comentar em SCSS
+
+// criando variáveis
+$backgroundColor: orange;
+
+// aninhamento de seletores
+/* este comentário será exportado para o arquivo css */
+.navigation-bar{
+  display: flex;
+  li {
+    padding: 5px 10px
   }
+}
+
+// &: referência para adição de nome ao seletor de componente de tela 
+.selector- {
+  &a {
+    float: left;
+  }
+  &a, &b {
+    background: $backgroundColor;
+  }
+}
+
+@mixin genericContainer {
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(black, .3);
+}
+.selector-e{
+  @include genericContainer;
+}
+@mixin genericContainer($padding: 8px){
+  padding: $padding;
+  box-shadow: 1px 1px 1px 1px rgba(black, .3);
+}
+.selector-f {
+  @include genericContainer(20px);
+}
+.selector-g {
+  @include genericContainer;
+}
+
+// import de arquivos scss parciais, "_arquivo.css", importando como @import 'arquivo'
+@import 'variables';
+
+.selector-f{
+  background-color: $colorDefault;
+  padding: 10px;
+}
+
+.selector-g{
+  @extend .selector-f;
+  padding: 15px;
+}
+
+// selecionando o design para browser específico
+// -cssBrowserEngine-attribute
+*, *:before, *:after {
+  background-image: -webkit-linear-gradient(red, blue);
+}
+
+selector-h {
+  background-image: linear-gradient(red, blue);
+}
